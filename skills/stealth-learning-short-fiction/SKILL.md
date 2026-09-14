@@ -17,12 +17,13 @@ This skill is not limited to fantasy or isekai. Genre should change with the use
 
 > Story first. Exact target sentences second. Explanation last.
 
-A finished story must pass both tests:
+A finished story must pass three tests:
 
 1. **Story-First Test** — if every English target sentence and translation is removed, the remaining Japanese text is still an enjoyable, coherent short story.
 2. **Memory-Anchor Test** — each target sentence is attached to a distinctive scene, emotion, action, revelation, joke, fear, victory, or relationship beat that can help the reader remember it later.
+3. **Native-Japanese Test** — the Japanese sounds like natural contemporary fiction written from the scene and character, not translated prose, prompt-generated prose, or a collection of light-novel mannerisms.
 
-If either test fails, revise before delivery.
+If any test fails, revise before delivery.
 
 ## Source Grounding
 
@@ -46,7 +47,8 @@ Unless the user asks otherwise:
 - The story is overwhelmingly Japanese.
 - English appears only as short target-sentence inserts.
 - Every target English sentence is immediately followed by its Japanese translation.
-- Do not make Japanese characters suddenly speak English merely to insert a test sentence.
+- Do not make Japanese characters suddenly speak or type English merely to insert a test sentence.
+- When no natural in-story English context exists, treat the target sentence as a separated learning insert placed at the matching story moment rather than pretending a character literally said it.
 - Do not turn the story into a teacher-student grammar lecture.
 - Do not append a grammar lesson, vocabulary list, comprehension quiz, or study notes unless the user requests them.
 - Keep educational metadata, coverage logs, and QA notes out of the reader-facing story.
@@ -60,7 +62,7 @@ Use a visually clean interruption at a meaningful moment:
 
 Then immediately return to the Japanese story.
 
-The sentence may function as narration, a remembered line, a caption-like thought, a message, a report, a sign, an article line, an announcement, or another natural story object. It does **not** have to be spoken dialogue.
+The target block does **not** have to be diegetic. It may be a reader-facing learning insert attached to the scene. Use it as actual dialogue, chat, article text, announcement, sign, or narration only when that use is naturally justified by the setting.
 
 ## Length Modes
 
@@ -172,6 +174,8 @@ Use the existing Story Skills prose craft guidance, especially:
 
 Also apply `references/japanese-prose-style.md`.
 
+Do **not** try to sound like a light novel by automatically adding sentence fragments, exaggerated self-commentary, witty metaphors, anime-like banter, or dramatic punctuation. Believable Japanese comes first.
+
 When available, use the companion `better-writing` skill for prose quality and anti-generic checks.
 
 ### 7. Embed target sentences surgically
@@ -185,6 +189,7 @@ Do not:
 - paraphrase an exact target
 - split one target sentence into fragments unless the user explicitly asks
 - force every sentence into spoken dialogue
+- make Japanese characters speak/type English without a plausible reason
 - insert several target sentences back-to-back like a vocabulary list
 - stop the story to explain the grammar
 - surround the sentence with unnatural setup whose only purpose is to justify English
@@ -207,7 +212,29 @@ Check:
 
 If not, improve the story before touching learning coverage.
 
-### 9. Perform learning revision
+### 9. Perform the mandatory Natural Japanese Fiction Pass
+
+Read and apply `references/natural-japanese-fiction-pass.md` **in full** before delivery.
+
+This pass is mandatory even when the story is short.
+
+It must specifically remove or repair:
+
+- translationese or English-shaped Japanese syntax
+- pseudo-light-novel chains of sentence fragments
+- unnecessary subject repetition
+- repetitive sentence endings
+- overuse of ellipses, dashes, or dramatic one-line paragraphs
+- explanatory inner monologue that repeats what the reader already understands
+- generic AI metaphors and quotable-line chasing
+- dialogue that sounds written rather than spoken
+- perfectly shaped banter that no real teenager would sustain
+- emotional summaries after the scene has already landed
+- artificial English-speaking situations created only to insert targets
+
+Perform a mental read-aloud pass over the entire Japanese story, not isolated sentences. If a line feels "written to sound like fiction" rather than like this character naturally thinks or speaks, rewrite it from the situation instead of swapping synonyms.
+
+### 10. Perform learning revision
 
 Then verify:
 
@@ -220,7 +247,9 @@ Then verify:
 
 Apply `references/memory-design.md` when choosing or strengthening recall anchors.
 
-### 10. Run the quality gates
+Do not let this learning pass reintroduce unnatural Japanese that was removed in the Native-Japanese pass. If adding a target makes the scene awkward, change the surrounding story placement or move the target to another story.
+
+### 11. Run the quality gates
 
 Use `references/quality-gates.md` before delivery.
 
@@ -230,6 +259,7 @@ Do not deliver as final if the story feels like:
 - a grammar teacher disguised as a character
 - a sequence of example sentences connected by filler
 - an overcomplicated plot designed only to justify all targets
+- Japanese prose that is technically grammatical but noticeably AI-written, translated, or mannered
 
 ## Genre Selection
 
@@ -276,6 +306,7 @@ For full-range outputs, complete the internal coverage audit from `references/te
 - `references/genre-presets.md` — genre-specific promises, plot pressures, and ending styles
 - `references/target-sentence-embedding.md` — exact-sentence preservation and natural insertion strategy
 - `references/japanese-prose-style.md` — natural Japanese narrative voice and anti-textbook rules
+- `references/natural-japanese-fiction-pass.md` — mandatory native-Japanese revision pass for dialogue, rhythm, translationese, AI-like mannerisms, and English-insert plausibility
 - `references/memory-design.md` — connect sentences to memorable scenes without overt teaching
 - `references/test-range-anthology.md` — distribute a full test range across varied stories with exact coverage
 - `references/quality-gates.md` — story-first, exactness, naturalness, and learning QA
