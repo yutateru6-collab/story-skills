@@ -35,7 +35,6 @@ This gate is mandatory. Read and apply `natural-japanese-fiction-pass.md` before
 
 Pass only if:
 
-- dialogue sounds appropriate to age, relationship, mood, and genre
 - narration is not a literal-English translation style
 - Japanese word order feels native rather than clause-by-clause translated
 - obvious subjects and objects are omitted naturally where context allows
@@ -47,8 +46,7 @@ Pass only if:
 - no generic moral is attached to the ending
 - no conspicuous "AI cleverness" is inserted only to sound witty, emotional, or light-novel-like
 - inner monologue does not restate and then explain what the reader already understood
-- each character has a distinguishable voice without becoming caricatured
-- the prose survives a mental read-aloud without awkward word order or over-shaped dialogue
+- the prose survives a mental read-aloud without awkward word order
 
 Automatic warning patterns:
 
@@ -57,12 +55,56 @@ Automatic warning patterns:
 - repeated rhetorical question → self-answer inner monologue
 - generic romance signals repeated in narration: heart pounding, face heating, "maybe this is love," etc.
 - repeated dramatic markers: `……`, `――`, exclamation marks, one-sentence paragraphs
-- overly symmetrical banter in which every line is a prepared comeback
 - cliché closing abstractions such as 「たぶん俺の負けだった」 unless strongly earned by character voice
 
 Fail if the Japanese is grammatically correct but still sounds noticeably generated, translated, mannered, or like a parody of light-novel prose.
 
 When uncertain, prefer quieter, plainer Japanese that fits the character.
+
+## Gate C2 — Character Voice & Dialogue
+
+This gate is mandatory whenever the story contains dialogue. Read and apply `character-voice-dialogue.md` before deciding PASS.
+
+Pass only if:
+
+- every speaking character has an internal voice card
+- age/life stage is reflected naturally without forced slang
+- relationship to the listener affects wording and politeness
+- address terms are consistent unless a deliberate change matters to the scene
+- personality is visible through choices, omissions, timing, and directness—not catchphrase gimmicks
+- emotion modifies the character's normal register plausibly
+- dialogue sounds spoken rather than written
+- shared-history exposition is not put into characters' mouths
+- no character perfectly diagnoses another person's hidden feelings merely for reader convenience
+- dialect is used only when grounded
+- gender stereotypes are not being used as the voice generator
+
+### Mandatory substitution test
+
+Take several important lines and swap speaker labels.
+
+If most lines still sound equally plausible coming from another character, FAIL and revise the voices.
+
+### Mandatory listener test
+
+Imagine the same character saying an important line to a different listener: best friend, crush, teacher, parent, senior, stranger.
+
+If the wording would remain unchanged despite a major relationship difference, check for generic dialogue and revise when appropriate.
+
+### Mandatory aloud test
+
+Read the exchange mentally at conversational speed.
+
+FAIL if:
+
+- a high-school student sounds like an adult explanatory script
+- a line is too polished for the emotional state
+- every response is a perfectly timed comeback
+- casual friends speak in uniformly neutral complete sentences without a character reason
+- both characters have the same sentence rhythm
+- a line feels natural on paper but unlikely to leave a person's mouth
+
+Example: 「どうしたの、そんな顔して」 is not universally wrong. It may fit a gentle character. But it must never be the automatic default for a close male high-school friend simply because it is grammatically natural. The line must come from the actual character and relationship.
 
 ## Gate D — Target Naturalness
 
@@ -139,8 +181,9 @@ Fail if several stories repeat:
 - the same emotional arc
 - the same sentence-fragment rhythm
 - the same "clever" first-person voice
+- the same friend/sidekick voice regardless of character
 
-Vary genre logic, not just nouns.
+Vary genre logic and character voice, not just nouns.
 
 ## Gate I — Memory Anchor
 
@@ -201,5 +244,7 @@ Before calling the work final, verify:
 - opening is strong
 - ending is specific
 - mandatory Natural Japanese Fiction Pass was completed
+- mandatory Character Voice & Dialogue pass was completed for all dialogue stories
+- speaker substitution and aloud tests were applied to important dialogue
 - English was not forced into implausible dialogue/chat
 - no hidden QA notes appear in the reader-facing output
