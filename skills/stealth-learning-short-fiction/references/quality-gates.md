@@ -29,16 +29,40 @@ Ask:
 
 If removing the targets destroys the story, the story is too dependent on instructional scaffolding. Rewrite.
 
-## Gate C — Natural Japanese
+## Gate C — Natural Japanese / Native-Japanese Test
+
+This gate is mandatory. Read and apply `natural-japanese-fiction-pass.md` before deciding PASS.
 
 Pass only if:
 
-- dialogue sounds appropriate to age, relationship, and genre
+- dialogue sounds appropriate to age, relationship, mood, and genre
 - narration is not a literal-English translation style
-- paragraphs are readable
+- Japanese word order feels native rather than clause-by-clause translated
+- obvious subjects and objects are omitted naturally where context allows
+- sentence endings do not repeat mechanically
+- paragraph rhythm is varied without relying on chains of one-line fragments
+- punctuation is structural rather than decorative
 - exposition is proportionate to length
 - no teacher-like commentary leaks into ordinary narration
 - no generic moral is attached to the ending
+- no conspicuous "AI cleverness" is inserted only to sound witty, emotional, or light-novel-like
+- inner monologue does not restate and then explain what the reader already understood
+- each character has a distinguishable voice without becoming caricatured
+- the prose survives a mental read-aloud without awkward word order or over-shaped dialogue
+
+Automatic warning patterns:
+
+- repeated fragment chains such as noun / noun / reaction / punchline
+- several paragraphs ending with quotable one-liners
+- repeated rhetorical question → self-answer inner monologue
+- generic romance signals repeated in narration: heart pounding, face heating, "maybe this is love," etc.
+- repeated dramatic markers: `……`, `――`, exclamation marks, one-sentence paragraphs
+- overly symmetrical banter in which every line is a prepared comeback
+- cliché closing abstractions such as 「たぶん俺の負けだった」 unless strongly earned by character voice
+
+Fail if the Japanese is grammatically correct but still sounds noticeably generated, translated, mannered, or like a parody of light-novel prose.
+
+When uncertain, prefer quieter, plainer Japanese that fits the character.
 
 ## Gate D — Target Naturalness
 
@@ -48,6 +72,9 @@ For each target sentence:
 - Does the target perform a story job?
 - Is the English placement understandable without an artificial excuse?
 - Does the Japanese translation fit the scene?
+- If the characters are Japanese, is there a real reason they would speak/type the exact English sentence?
+
+If no natural in-story English context exists, use a separated reader-facing target block at the matching moment. Do not invent an English chat, announcement, or conversation merely to justify the sentence.
 
 If a sentence has no natural job, move it to another story.
 
@@ -90,6 +117,7 @@ Examples:
 - Horror must create unease or fear, not just contain a ghost.
 - Sports must contain effort, pressure, competition, or physical stakes, not just mention a sport.
 - Romance must contain vulnerability, anticipation, intimacy, or relational movement, not just a crush.
+- Rom-com must contain relational movement **and** comic timing; do not substitute a series of witty retorts for actual chemistry.
 - Comedy must actually contain comic timing or payoff.
 - Mystery must contain a fair question and meaningful clue/reveal.
 - Slice-of-life must reward attention to small human detail.
@@ -109,6 +137,8 @@ Fail if several stories repeat:
 - the same message-app setup
 - the same mentor lecture
 - the same emotional arc
+- the same sentence-fragment rhythm
+- the same "clever" first-person voice
 
 Vary genre logic, not just nouns.
 
@@ -134,8 +164,28 @@ Automatic fail patterns:
 - each paragraph exists only to introduce another sentence
 - the final paragraph summarizes "what we learned"
 - every target is spoken by a character despite unnatural context
+- Japanese characters speak/type English solely because the author needs to place the target
 
 Rewrite until the reader-facing artifact feels like fiction first.
+
+## Gate K — Remove-the-Author Test
+
+Ask whether the narrator is visibly trying too hard to entertain.
+
+Temporarily mark every:
+
+- witty metaphor
+- self-deprecating joke
+- dramatic fragment
+- rhetorical question
+- emotional explanation
+- quotable final line
+
+Then remove half of the marked items and reread.
+
+If the story becomes more believable, keep the quieter version.
+
+A short story does not need every paragraph to advertise that it is a story.
 
 ## Final Delivery Check
 
@@ -150,4 +200,6 @@ Before calling the work final, verify:
 - story remains primarily Japanese
 - opening is strong
 - ending is specific
+- mandatory Natural Japanese Fiction Pass was completed
+- English was not forced into implausible dialogue/chat
 - no hidden QA notes appear in the reader-facing output
