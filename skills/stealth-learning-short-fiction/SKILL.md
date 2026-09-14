@@ -37,6 +37,8 @@ When the user supplies a textbook, test, example bank, worksheet, PDF, DOCX, ima
 
 Maintain an internal target-sentence ledger before drafting. See `references/target-sentence-embedding.md`.
 
+When the request covers an entire test range, lesson set, example bank, or many target sentences, read and apply `references/test-range-anthology.md` before drafting. Build complete coverage first, then distribute targets across multiple short stories rather than overloading one story.
+
 ## Default Reader Experience
 
 Unless the user asks otherwise:
@@ -86,6 +88,8 @@ Before inventing the plot, record for each target sentence:
 - whether exact wording is mandatory
 
 Do not begin drafting until the exact strings are stable.
+
+If the source contains more targets than fit naturally in one story, first make an anthology allocation using `references/test-range-anthology.md`.
 
 ### 2. Choose the entertainment promise
 
@@ -166,6 +170,8 @@ Use the existing Story Skills prose craft guidance, especially:
 - sensory specificity
 - a meaningful change by the end
 
+Also apply `references/japanese-prose-style.md`.
+
 When available, use the companion `better-writing` skill for prose quality and anti-generic checks.
 
 ### 7. Embed target sentences surgically
@@ -212,6 +218,8 @@ Then verify:
 - grammar explanations have not invaded the story
 - no unsupported rule has been added
 
+Apply `references/memory-design.md` when choosing or strengthening recall anchors.
+
 ### 10. Run the quality gates
 
 Use `references/quality-gates.md` before delivery.
@@ -256,9 +264,11 @@ Reader-facing output should normally contain only:
 1. title
 2. story
 
-Do not expose the target ledger, learning objectives, QA checklist, or grammar labels unless the user asks.
+Do not expose the target ledger, learning objectives, QA checklist, grammar labels, or coverage audit unless the user asks.
 
 When generating several stories, make them meaningfully different in genre, premise, emotional rhythm, and ending shape. Do not simply reskin the same plot.
+
+For full-range outputs, complete the internal coverage audit from `references/test-range-anthology.md` before treating the anthology as finished.
 
 ## Reference Files
 
@@ -267,4 +277,5 @@ When generating several stories, make them meaningfully different in genre, prem
 - `references/target-sentence-embedding.md` — exact-sentence preservation and natural insertion strategy
 - `references/japanese-prose-style.md` — natural Japanese narrative voice and anti-textbook rules
 - `references/memory-design.md` — connect sentences to memorable scenes without overt teaching
+- `references/test-range-anthology.md` — distribute a full test range across varied stories with exact coverage
 - `references/quality-gates.md` — story-first, exactness, naturalness, and learning QA
