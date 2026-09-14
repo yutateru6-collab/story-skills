@@ -106,6 +106,41 @@ FAIL if:
 
 Example: 「どうしたの、そんな顔して」 is not universally wrong. It may fit a gentle character. But it must never be the automatic default for a close male high-school friend simply because it is grammatically natural. The line must come from the actual character and relationship.
 
+## Gate C3 — AI-Writing Detector / textlint Review
+
+Read and apply `ai-writing-textlint-gate.md` before deciding PASS.
+
+When a Node/textlint runtime is available, use the external detectors described there:
+
+- `p1ass/textlint-rule-preset-ai-words-ja` for lexical AI-like wording
+- `textlint-ja/textlint-rule-preset-ai-writing` for structural AI-writing patterns
+
+Important: for fiction, detector output is **warning evidence**, not an automatic rewrite command.
+
+Before linting, protect exact target English sentences and required Japanese translations. Lint only the authored Japanese fiction.
+
+Classify each finding as:
+
+- **KEEP** — concrete/literal wording that is the natural expression for the scene
+- **REVIEW** — genre-natural wording that may become mannered when repeated
+- **REWRITE** — abstract/meta wording or templated phrasing that does not belong to the POV character or scene
+
+Do not aim for zero warnings.
+
+Automatic FAIL if the revision process:
+
+- blindly replaces every flagged word
+- changes a character's natural speech merely to satisfy textlint
+- replaces a precise concrete verb with vague wording
+- alters a protected test sentence or translation
+- makes the prose more formal or abstract just to remove a warning
+
+Pay special attention to **frequency**, not only presence. A single `〜した瞬間` or genre-appropriate `静かに消えた` may be natural; repeated use within one short piece or across an anthology is a stronger AI-style signal.
+
+If textlint cannot run in the current environment, perform the manual fallback in `ai-writing-textlint-gate.md`.
+
+This gate supplements Gate C and Gate C2. Passing textlint does not prove the prose is natural.
+
 ## Gate D — Target Naturalness
 
 For each target sentence:
@@ -182,6 +217,7 @@ Fail if several stories repeat:
 - the same sentence-fragment rhythm
 - the same "clever" first-person voice
 - the same friend/sidekick voice regardless of character
+- the same textlint-flagged wording or phrase pattern across multiple stories
 
 Vary genre logic and character voice, not just nouns.
 
@@ -245,6 +281,7 @@ Before calling the work final, verify:
 - ending is specific
 - mandatory Natural Japanese Fiction Pass was completed
 - mandatory Character Voice & Dialogue pass was completed for all dialogue stories
+- AI-writing detector/textlint review was completed when available, or manual fallback was used
 - speaker substitution and aloud tests were applied to important dialogue
 - English was not forced into implausible dialogue/chat
 - no hidden QA notes appear in the reader-facing output
