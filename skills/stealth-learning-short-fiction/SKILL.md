@@ -17,11 +17,12 @@ This skill is not limited to fantasy or isekai. Genre should change with the use
 
 > Story first. Exact target sentences second. Explanation last.
 
-A finished story must pass three tests:
+A finished story must pass four tests:
 
 1. **Story-First Test** — if every English target sentence and translation is removed, the remaining Japanese text is still an enjoyable, coherent short story.
 2. **Memory-Anchor Test** — each target sentence is attached to a distinctive scene, emotion, action, revelation, joke, fear, victory, or relationship beat that can help the reader remember it later.
 3. **Native-Japanese Test** — the Japanese sounds like natural contemporary fiction written from the scene and character, not translated prose, prompt-generated prose, or a collection of light-novel mannerisms.
+4. **Character-Voice Test** — every important spoken line sounds like that specific character speaking to that specific listener in that specific emotional state. If speaker labels can be swapped without much difference, revise.
 
 If any test fails, revise before delivery.
 
@@ -107,6 +108,31 @@ Specify internally:
 
 If the premise is not interesting in one or two Japanese sentences, replace it.
 
+### 2.5 Lock character voice before writing dialogue
+
+If the story contains dialogue, read and apply `references/character-voice-dialogue.md` before drafting any spoken exchange.
+
+Create a compact internal voice card for every speaking character, including:
+
+- age / school year or life stage
+- personality
+- relationship to the current listener
+- social distance / status
+- directness
+- talkativeness
+- teasing level
+- politeness
+- address terms
+- typical sentence shape
+- emotional-state changes
+- what this character would rarely or never say
+
+Do not use age or gender stereotypes as a substitute for characterization.
+
+A generic neutral line is not automatically natural. For example, 「どうしたの、そんな顔して」 may suit a gentle or soft-spoken character, but it should not be the default line for every teenage friend. Choose wording from the actual character and relationship.
+
+The same character must sound different with a best friend, crush, teacher, parent, senior, or stranger when the relationship calls for it.
+
 ### 3. Pick the smallest viable incident
 
 Short fiction should usually cover one compact incident rather than a whole life arc.
@@ -172,7 +198,10 @@ Use the existing Story Skills prose craft guidance, especially:
 - sensory specificity
 - a meaningful change by the end
 
-Also apply `references/japanese-prose-style.md`.
+Also apply:
+
+- `references/japanese-prose-style.md`
+- `references/character-voice-dialogue.md` for every dialogue scene
 
 Do **not** try to sound like a light novel by automatically adding sentence fragments, exaggerated self-commentary, witty metaphors, anime-like banter, or dramatic punctuation. Believable Japanese comes first.
 
@@ -212,13 +241,16 @@ Check:
 
 If not, improve the story before touching learning coverage.
 
-### 9. Perform the mandatory Natural Japanese Fiction Pass
+### 9. Perform the mandatory Natural Japanese + Character Voice Pass
 
-Read and apply `references/natural-japanese-fiction-pass.md` **in full** before delivery.
+Read and apply both of these **in full** before delivery:
 
-This pass is mandatory even when the story is short.
+- `references/natural-japanese-fiction-pass.md`
+- `references/character-voice-dialogue.md`
 
-It must specifically remove or repair:
+These passes are mandatory even when the story is short.
+
+They must specifically remove or repair:
 
 - translationese or English-shaped Japanese syntax
 - pseudo-light-novel chains of sentence fragments
@@ -228,11 +260,15 @@ It must specifically remove or repair:
 - explanatory inner monologue that repeats what the reader already understands
 - generic AI metaphors and quotable-line chasing
 - dialogue that sounds written rather than spoken
+- dialogue that does not match age, relationship, personality, status, or emotional state
+- important lines that could be swapped between characters unchanged
 - perfectly shaped banter that no real teenager would sustain
 - emotional summaries after the scene has already landed
 - artificial English-speaking situations created only to insert targets
 
 Perform a mental read-aloud pass over the entire Japanese story, not isolated sentences. If a line feels "written to sound like fiction" rather than like this character naturally thinks or speaks, rewrite it from the situation instead of swapping synonyms.
+
+Then run the **speaker substitution test** on important dialogue: temporarily swap speakers. If the line still fits equally well, strengthen character voice unless the similarity is intentional.
 
 ### 10. Perform learning revision
 
@@ -260,6 +296,7 @@ Do not deliver as final if the story feels like:
 - a sequence of example sentences connected by filler
 - an overcomplicated plot designed only to justify all targets
 - Japanese prose that is technically grammatical but noticeably AI-written, translated, or mannered
+- dialogue written for a generic "teenager" rather than the actual character
 
 ## Genre Selection
 
@@ -306,7 +343,8 @@ For full-range outputs, complete the internal coverage audit from `references/te
 - `references/genre-presets.md` — genre-specific promises, plot pressures, and ending styles
 - `references/target-sentence-embedding.md` — exact-sentence preservation and natural insertion strategy
 - `references/japanese-prose-style.md` — natural Japanese narrative voice and anti-textbook rules
-- `references/natural-japanese-fiction-pass.md` — mandatory native-Japanese revision pass for dialogue, rhythm, translationese, AI-like mannerisms, and English-insert plausibility
+- `references/natural-japanese-fiction-pass.md` — mandatory native-Japanese revision pass for rhythm, translationese, AI-like mannerisms, and English-insert plausibility
+- `references/character-voice-dialogue.md` — mandatory character-specific dialogue system: voice cards, relationship register, substitution test, and read-aloud QA
 - `references/memory-design.md` — connect sentences to memorable scenes without overt teaching
 - `references/test-range-anthology.md` — distribute a full test range across varied stories with exact coverage
-- `references/quality-gates.md` — story-first, exactness, naturalness, and learning QA
+- `references/quality-gates.md` — story-first, exactness, naturalness, character voice, and learning QA
