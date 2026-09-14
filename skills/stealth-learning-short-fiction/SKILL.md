@@ -1,28 +1,53 @@
 ---
 name: stealth-learning-short-fiction
-description: Use this skill when the user wants a short, engaging Japanese story, light-novel-style reading passage, genre fiction, or narrative learning material that naturally embeds exact target English sentences and their Japanese translations for memorization or test preparation. Suitable for slice-of-life, romance, sports, horror, mystery, SF, fantasy, isekai, comedy, suspense, and other genres. The story must remain primarily Japanese and work as entertainment even if the English inserts are removed.
+description: Use this skill when the user wants an engaging one-shot Japanese short-short story, light-novel-style reading passage, genre fiction, or narrative learning material that naturally embeds exact target English sentences and their Japanese translations for memorization or test preparation. Suitable for comedy, slice-of-life, romance, sports, horror, mystery, suspense, SF, fantasy, isekai, family, friendship, and other genres. By default, each complete story uses exactly five source-grounded target English sentences and remains enjoyable even if every English insert is removed.
 ---
 
 # Stealth Learning Short Fiction
 
 ## Purpose
 
-Create short Japanese entertainment fiction in which the reader becomes familiar with exact target English sentences and grammar through memorable story scenes rather than overt instruction.
+Create **one-shot Japanese short-short fiction that is genuinely worth reading**, while embedding exact English test/example sentences so that scenes, emotions, and story events become memory anchors.
 
-The primary product is a **good short story**. Learning is embedded underneath the story design.
+The primary product is fiction. Learning is hidden underneath the story design.
 
-This skill is not limited to fantasy or isekai. Genre should change with the user's request, the target sentences, and the emotional effect that best fits them.
+This skill is not limited to fantasy, isekai, school stories, romance, or any single genre.
+
+## Default Format
+
+Unless the user specifies otherwise:
+
+- one complete standalone story
+- about **2,000–3,500 Japanese characters**
+- **exactly 5 target English sentences** when at least five source targets are available
+- each target English sentence is immediately followed by its Japanese translation
+- 2–4 important characters
+- 1–3 locations
+- 1–3 scenes
+- one central incident / conflict / question / emotional problem
+- one meaningful turn
+- one satisfying genre-appropriate aftertaste
+- overwhelmingly Japanese prose
+
+The target count is fixed; the plot is not. Do not write five mini-scenes merely to justify five sentences.
+
+If fewer than five source-grounded targets exist, use all available targets and never invent a fifth sentence.
+
+For a full-range anthology where the final group contains fewer than five unused targets, prefer **spaced review**: combine the remaining new targets with one or more previously used source targets so the final story still contains five exact source-grounded targets. Track which targets are new coverage and which are deliberate review. Never present an invented sentence as a target.
 
 ## Core Principle
 
-> Story first. Exact target sentences second. Explanation last.
+> Story first. Five exact targets second. Explanation last.
 
-A finished story must pass four tests:
+A finished story must pass all of these tests:
 
-1. **Story-First Test** — if every English target sentence and translation is removed, the remaining Japanese text is still an enjoyable, coherent short story.
-2. **Memory-Anchor Test** — each target sentence is attached to a distinctive scene, emotion, action, revelation, joke, fear, victory, or relationship beat that can help the reader remember it later.
-3. **Native-Japanese Test** — the Japanese sounds like natural contemporary fiction written from the scene and character, not translated prose, prompt-generated prose, or a collection of light-novel mannerisms.
-4. **Character-Voice Test** — every important spoken line sounds like that specific character speaking to that specific listener in that specific emotional state. If speaker labels can be swapped without much difference, revise.
+1. **Story-First Test** — remove all five English blocks and translations; the Japanese story still works as fiction.
+2. **Five-Target Cohesion Test** — all five targets belong to one coherent story rather than five stitched examples.
+3. **Memory-Anchor Test** — each target has a specific memorable scene, action, joke, fear, relationship beat, image, or revelation.
+4. **Short-Short Craft Test** — the story has an appropriate scope, strong opening, escalation, a meaningful turn, and an ending that rewards the setup.
+5. **Native-Japanese Test** — the Japanese reads like natural contemporary fiction, not translated or prompt-generated prose.
+6. **Character-Voice Test** — dialogue belongs to the specific speaker/listener relationship and emotional state.
+7. **AI-Writing Review** — AI-like wording/structure detectors are used as warnings when available, followed by human-style contextual judgment rather than blind replacement.
 
 If any test fails, revise before delivery.
 
@@ -30,285 +55,299 @@ If any test fails, revise before delivery.
 
 When the user supplies a textbook, test, example bank, worksheet, PDF, DOCX, image, or other source:
 
-- Treat the supplied material as authoritative for the target sentences and test scope.
-- Extract the target English exactly from the source.
+- Treat supplied material as authoritative for the target sentences and scope.
+- Extract target English exactly from the source.
 - Do not silently modernize, simplify, paraphrase, correct, or replace a target sentence.
-- If a source sentence appears erroneous or ambiguous, preserve it for exact-test practice but flag the concern separately instead of silently changing it.
-- Use the source's Japanese translation when the user wants faithful reproduction; otherwise a natural Japanese translation may be used only when this does not alter the target meaning.
-- Do not invent grammar rules or test coverage not supported by the supplied material.
+- If a source sentence appears erroneous or ambiguous, preserve it for exact-test practice and flag the concern separately rather than silently changing it.
+- Use the source's Japanese translation when faithful reproduction is requested.
+- If natural translation is allowed, do not change the target meaning.
+- Do not invent grammar rules or test coverage unsupported by the source.
 
-Maintain an internal target-sentence ledger before drafting. See `references/target-sentence-embedding.md`.
+Maintain an internal target-sentence ledger before drafting.
 
-When the request covers an entire test range, lesson set, example bank, or many target sentences, read and apply `references/test-range-anthology.md` before drafting. Build complete coverage first, then distribute targets across multiple short stories rather than overloading one story.
+For an entire lesson/test range, also use `references/test-range-anthology.md`.
 
-## Default Reader Experience
+## Reader-Facing Target Format
 
-Unless the user asks otherwise:
-
-- The story is overwhelmingly Japanese.
-- English appears only as short target-sentence inserts.
-- Every target English sentence is immediately followed by its Japanese translation.
-- Do not make Japanese characters suddenly speak or type English merely to insert a test sentence.
-- When no natural in-story English context exists, treat the target sentence as a separated learning insert placed at the matching story moment rather than pretending a character literally said it.
-- Do not turn the story into a teacher-student grammar lecture.
-- Do not append a grammar lesson, vocabulary list, comprehension quiz, or study notes unless the user requests them.
-- Keep educational metadata, coverage logs, and QA notes out of the reader-facing story.
-
-### Default Target Insert Format
-
-Use a visually clean interruption at a meaningful moment:
+The story remains primarily Japanese. At a meaningful moment, insert:
 
 **She might have sent the message to the wrong person.**  
 彼女は間違った人にメッセージを送ってしまったかもしれない。
 
-Then immediately return to the Japanese story.
+Then return immediately to the story.
 
-The target block does **not** have to be diegetic. It may be a reader-facing learning insert attached to the scene. Use it as actual dialogue, chat, article text, announcement, sign, or narration only when that use is naturally justified by the setting.
+The target block does **not** have to exist literally inside the fictional world. It may be a reader-facing learning insert attached to the matching moment.
 
-## Length Modes
+Use a target as actual dialogue, chat, article text, sign, announcement, or narration only when the setting naturally justifies that English.
 
-Choose the shortest mode that can still produce a complete and satisfying story.
-
-- **Micro:** about 400–700 Japanese characters; 1–2 target sentences; one scene, one turn.
-- **Standard:** about 700–1,400 Japanese characters; 2–4 target sentences; default.
-- **Extended:** about 1,400–2,200 Japanese characters; 3–5 target sentences; only when the story genuinely needs more room.
-
-Do not pad a story to hit a word count. If too many target sentences are supplied, split them across multiple independent stories rather than stuffing them unnaturally into one story.
-
-As a default, 2–4 exact target sentences per short story is preferred. Five is a soft maximum, not a goal.
+Never make Japanese characters suddenly speak/type English merely because the target must appear.
 
 ## Workflow
 
-### 1. Build the target-sentence ledger
+### 1. Lock the five targets
 
-Before inventing the plot, record for each target sentence:
+Before inventing the plot, record exactly five source targets when available:
 
 - exact English
-- exact or approved Japanese translation
-- source location if known
-- grammar/meaning focus supported by the source
-- semantic situation expressed by the sentence
-- whether exact wording is mandatory
+- exact/approved Japanese translation
+- source location
+- grammar/meaning supported by the source
+- semantic situation
+- whether this is new coverage or spaced review
 
-Do not begin drafting until the exact strings are stable.
+Do not draft until the strings are stable.
 
-If the source contains more targets than fit naturally in one story, first make an anthology allocation using `references/test-range-anthology.md`.
+### 2. Create the entertainment promise first
 
-### 2. Choose the entertainment promise
+Ignore English for a moment and state internally why a student would continue reading.
 
-Decide what makes this story worth reading **without considering the English yet**.
-
-Specify internally:
+Specify:
 
 - genre
-- emotional promise: funny, tense, touching, romantic, eerie, cathartic, exciting, bittersweet, etc.
+- intended reader emotion
 - protagonist's immediate want
-- one obstacle or uncertainty
-- one change, discovery, decision, reversal, or emotional payoff
+- obstacle/uncertainty
+- what escalates
+- what changes at the turn
+- what kind of aftertaste the ending should leave
 
-If the premise is not interesting in one or two Japanese sentences, replace it.
+If the premise is not interesting in one or two Japanese sentences without mentioning grammar, replace it.
 
-### 2.5 Lock character voice before writing dialogue
+Examples of good promises:
 
-If the story contains dialogue, read and apply `references/character-voice-dialogue.md` before drafting any spoken exchange.
+- a harmless lie becomes increasingly difficult to correct
+- an ordinary school room starts obeying one impossible rule
+- two people want opposite things from the same conversation
+- a player planning to quit discovers something that changes the decision
+- one ordinary detail contradicts everyone's version of an event
 
-Create a compact internal voice card for every speaking character, including:
+### 3. Lock character voice before dialogue
 
-- age / school year or life stage
+If the story contains dialogue, read `references/character-voice-dialogue.md`.
+
+Create an internal voice card for each speaker:
+
+- age / school year / life stage
 - personality
-- relationship to the current listener
+- relationship to the listener
 - social distance / status
 - directness
 - talkativeness
-- teasing level
+- teasing style
 - politeness
 - address terms
 - typical sentence shape
 - emotional-state changes
-- what this character would rarely or never say
+- phrases this person would rarely or never use
 
-Do not use age or gender stereotypes as a substitute for characterization.
+Do not use age/gender stereotypes as a voice generator.
 
-A generic neutral line is not automatically natural. For example, 「どうしたの、そんな顔して」 may suit a gentle or soft-spoken character, but it should not be the default line for every teenage friend. Choose wording from the actual character and relationship.
+### 4. Build the short-short blueprint
 
-The same character must sound different with a best friend, crush, teacher, parent, senior, or stranger when the relationship calls for it.
+Read `references/short-short-fiction-craft.md`.
 
-### 3. Pick the smallest viable incident
+Default story architecture:
 
-Short fiction should usually cover one compact incident rather than a whole life arc.
+1. Hook
+2. Setup / immediate want
+3. Escalation
+4. Meaningful turn
+5. Consequence
+6. Aftertaste
 
-Good scopes include:
+Keep the scope compact. This is not a miniature novel.
 
-- ten minutes after practice
-- one train ride
-- one late-night message
-- one failed confession
-- one forgotten umbrella
-- one strange phone call
-- one final pitch or serve
-- one clubroom argument
-- one hospital visit
-- one abandoned classroom at night
+Then create an internal five-target placement map:
 
-Avoid unnecessary lore, backstory, side plots, large casts, or multiple twists.
+| Target | Story job | Approximate region | Memory anchor |
+|---|---|---|---|
+| T1 | fact/state/plan/setup | opening/setup | specific cue |
+| T2 | deepen/complicate | early-middle | specific cue |
+| T3 | history/reveal/relationship | middle | specific cue |
+| T4 | intensify turn/consequence | late-middle | specific cue |
+| T5 | reinforce outcome/aftertaste | late | specific cue |
 
-### 4. Select a short-story shape
+This table is a planning aid, not a rigid formula.
 
-Use the compact five-beat model unless another structure clearly fits better:
+Rules:
 
-1. **Hook** — create curiosity, tension, voice, surprise, or emotion in the opening 1–3 sentences.
-2. **Situation** — establish the protagonist's immediate want or problem quickly.
-3. **Pressure** — something complicates the situation, creates a misunderstanding, raises a small stake, or deepens emotion.
-4. **Turn** — discovery, reversal, decision, realization, failure, success, scare, joke, or relationship shift.
-5. **Aftertaste** — end with resonance appropriate to the genre: warmth, fear, laughter, ache, triumph, unease, or curiosity.
+- all five targets need distinct narrative jobs
+- avoid back-to-back target blocks
+- do not create five separate incidents merely for five sentences
+- target order follows story logic, not textbook order, unless both happen to match
+- no target may appear only because it was unused
 
-For slice-of-life, conflict can be small. For horror, the aftertaste may remain unresolved. For comedy, the final beat may be a punchline. For romance, it may be a small emotional shift rather than a confession.
+### 5. Draft the Japanese story first
 
-See `references/short-story-craft.md` and `references/genre-presets.md`.
+Draft the actual fiction primarily in Japanese, using placeholders for target moments if useful.
 
-### 5. Assign each target sentence a story job
+Follow:
 
-Never insert a target sentence merely because it must appear.
-
-Give every target sentence at least one concrete function:
-
-- reveals what is happening
-- reveals what happened earlier
-- changes how a character interprets events
-- expresses a plan, prediction, obligation, possibility, regret, or memory
-- becomes a clue
-- raises or resolves a misunderstanding
-- intensifies emotion
-- marks a turning point
-- anchors a repeated image or memory
-
-If no natural job exists, move that sentence to another story.
-
-### 6. Draft Japanese prose first
-
-Draft the scene primarily in natural Japanese.
-
-Use the existing Story Skills prose craft guidance, especially:
-
+- `references/short-short-fiction-craft.md`
 - `skills/chapter-writing/references/writing-guidelines.md`
-- show rather than over-explain
-- clear POV
-- purposeful dialogue
-- varied pacing
-- sensory specificity
-- a meaningful change by the end
-
-Also apply:
-
 - `references/japanese-prose-style.md`
-- `references/character-voice-dialogue.md` for every dialogue scene
+- `references/character-voice-dialogue.md` for dialogue scenes
 
-Do **not** try to sound like a light novel by automatically adding sentence fragments, exaggerated self-commentary, witty metaphors, anime-like banter, or dramatic punctuation. Believable Japanese comes first.
+Do not manufacture a light-novel voice through:
 
-When available, use the companion `better-writing` skill for prose quality and anti-generic checks.
+- fragment chains
+- exaggerated self-commentary
+- constant witty metaphors
+- anime-like perfect banter
+- decorative punctuation
+- quotable lines in every paragraph
 
-### 7. Embed target sentences surgically
+Believable Japanese comes first.
 
-Insert the exact English only at the scene moment where it has the strongest semantic and emotional connection.
+### 6. Embed the five targets surgically
+
+Insert each exact target only where the scene already supports its meaning.
 
 Immediately place the Japanese translation below it.
 
 Do not:
 
-- paraphrase an exact target
-- split one target sentence into fragments unless the user explicitly asks
-- force every sentence into spoken dialogue
-- make Japanese characters speak/type English without a plausible reason
-- insert several target sentences back-to-back like a vocabulary list
-- stop the story to explain the grammar
-- surround the sentence with unnatural setup whose only purpose is to justify English
+- paraphrase exact targets
+- split target sentences unless explicitly requested
+- force targets into spoken dialogue
+- put several targets consecutively like a list
+- pause to explain grammar
+- invent an unnatural situation solely to justify English
 
-See `references/target-sentence-embedding.md`.
+If the fifth target does not fit, redesign the story earlier. Do not append it near the ending as homework.
 
-### 8. Perform entertainment revision
+### 7. Run the Short-Short Craft Pass
 
-Revise the story once **ignoring the learning objective**.
+Use `references/short-short-fiction-craft.md` again after drafting.
 
-Check:
+Specifically check:
 
-- Would the first paragraph make a student continue reading?
-- Is there a clear emotional or narrative question?
-- Does something change?
-- Are there unnecessary explanations?
-- Is the dialogue alive rather than functional?
-- Does the ending reward the setup?
-- Is the tone faithful to the selected genre?
+- opening hook
+- compact scope
+- paragraph economy
+- character compression
+- subtext
+- setting that affects events
+- escalation
+- meaningful turn
+- opening/ending relationship
+- genre promise
+- twist dependency
+- vignette trap
+- miniature-novel problem
 
-If not, improve the story before touching learning coverage.
+Revise structure before polishing sentences.
 
-### 9. Perform the mandatory Natural Japanese + Character Voice Pass
+### 8. Run the Story Analysis Pass
 
-Read and apply both of these **in full** before delivery:
+Read `references/story-analysis-pass.md`.
+
+Audit:
+
+- narrative foundation
+- protagonist's concrete stake/want
+- character behavior and relationships
+- setting function
+- decisive turn
+- scene purpose
+- emotional architecture
+- information flow
+- subtext
+- resolution/aftertaste
+- five-target cohesion
+- reader engagement
+
+Fix macro problems before micro prose.
+
+### 9. Run the mandatory Natural Japanese + Character Voice Pass
+
+Read both in full:
 
 - `references/natural-japanese-fiction-pass.md`
 - `references/character-voice-dialogue.md`
 
-These passes are mandatory even when the story is short.
+Repair:
 
-They must specifically remove or repair:
-
-- translationese or English-shaped Japanese syntax
-- pseudo-light-novel chains of sentence fragments
-- unnecessary subject repetition
-- repetitive sentence endings
-- overuse of ellipses, dashes, or dramatic one-line paragraphs
-- explanatory inner monologue that repeats what the reader already understands
-- generic AI metaphors and quotable-line chasing
+- translationese / English-shaped syntax
+- pseudo-light-novel fragment chains
+- repeated subject marking
+- mechanical sentence endings
+- decorative punctuation
+- explanatory inner monologue
+- generic AI metaphors
 - dialogue that sounds written rather than spoken
-- dialogue that does not match age, relationship, personality, status, or emotional state
-- important lines that could be swapped between characters unchanged
-- perfectly shaped banter that no real teenager would sustain
-- emotional summaries after the scene has already landed
-- artificial English-speaking situations created only to insert targets
+- dialogue inconsistent with age/relationship/personality/status/emotion
+- interchangeable character lines
+- unnaturally polished banter
+- redundant emotional explanation
 
-Perform a mental read-aloud pass over the entire Japanese story, not isolated sentences. If a line feels "written to sound like fiction" rather than like this character naturally thinks or speaks, rewrite it from the situation instead of swapping synonyms.
+Run:
 
-Then run the **speaker substitution test** on important dialogue: temporarily swap speakers. If the line still fits equally well, strengthen character voice unless the similarity is intentional.
+- mental read-aloud test
+- speaker substitution test
+- listener/register test
 
-### 10. Perform learning revision
+### 10. Run the AI-Writing Detector Review
 
-Then verify:
+Read `references/ai-writing-textlint-gate.md`.
 
-- every required English sentence appears exactly
-- every target has its Japanese translation immediately below it
-- each target is attached to a memorable story beat
-- no target's meaning is distorted by the surrounding Japanese
-- grammar explanations have not invaded the story
-- no unsupported rule has been added
+When available, use:
 
-Apply `references/memory-design.md` when choosing or strengthening recall anchors.
+- `p1ass/textlint-rule-preset-ai-words-ja`
+- `textlint-ja/textlint-rule-preset-ai-writing`
 
-Do not let this learning pass reintroduce unnatural Japanese that was removed in the Native-Japanese pass. If adding a target makes the scene awkward, change the surrounding story placement or move the target to another story.
+Protect exact English targets and required Japanese translations before linting.
 
-### 11. Run the quality gates
+Classify findings as:
 
-Use `references/quality-gates.md` before delivery.
+- KEEP
+- REVIEW
+- REWRITE
 
-Do not deliver as final if the story feels like:
+Do not chase zero warnings or mechanically replace words.
 
-- a worksheet wearing a costume
-- a grammar teacher disguised as a character
-- a sequence of example sentences connected by filler
-- an overcomplicated plot designed only to justify all targets
-- Japanese prose that is technically grammatical but noticeably AI-written, translated, or mannered
-- dialogue written for a generic "teenager" rather than the actual character
+### 11. Run learning revision
+
+Verify:
+
+- exactly five source-grounded targets appear when five are available
+- all five match the source exactly
+- every target has the correct Japanese translation directly below it
+- each target has a distinct memory anchor
+- surrounding Japanese does not distort target meaning
+- no grammar lecture leaked into the story
+- new coverage/review status is tracked internally for anthology work
+
+Do not let this pass reintroduce unnatural Japanese.
+
+### 12. Run final quality gates
+
+Use `references/quality-gates.md`.
+
+Automatic failure patterns include:
+
+- worksheet wearing a costume
+- grammar teacher disguised as a character
+- five example sentences connected by filler
+- five unrelated mini-scenes
+- overcomplicated plot built only to justify targets
+- technically grammatical but AI-like Japanese
+- generic teenager dialogue
+- story that is boring until a final twist
+- beautiful atmosphere with no narrative movement
+- miniature novel compressed into summary
 
 ## Genre Selection
 
 If the user specifies a genre, follow it.
 
-If genre is unspecified, choose based on the target sentences and vary across outputs. Do not default to isekai, fantasy, romance, or any single genre.
+If unspecified, choose from the target semantics and vary across stories. Do not default to a single genre.
 
 Possible genres include:
 
+- comedy / school comedy
 - slice-of-life
-- school comedy
-- romance
+- romance / romantic comedy
 - sports
 - horror
 - mystery
@@ -316,35 +355,53 @@ Possible genres include:
 - SF
 - fantasy
 - isekai
-- family drama
 - friendship
+- family drama
 - workplace
 - adventure
 - bittersweet drama
 
-Use `references/genre-presets.md` as a source of genre-specific craft, not as rigid templates.
+Use `references/genre-presets.md` as guidance, not rigid templates.
 
-## Output Rules
+## Anthology Rule
 
-Reader-facing output should normally contain only:
+For multiple one-shot stories:
+
+- standardize on five targets per story
+- vary genre, protagonist, relationship, conflict, ending shape, POV, and rhythm
+- do not reuse the same plot skeleton with changed nouns
+- if the last batch has fewer than five unused targets, use spaced-review targets from earlier stories rather than inventing content
+- internal coverage ledger must distinguish new targets from repeated review targets
+
+## Reader-Facing Output
+
+By default, show only:
 
 1. title
 2. story
+3. the five embedded target English blocks with their Japanese translations as part of the story flow
 
-Do not expose the target ledger, learning objectives, QA checklist, grammar labels, or coverage audit unless the user asks.
+Do not expose:
 
-When generating several stories, make them meaningfully different in genre, premise, emotional rhythm, and ending shape. Do not simply reskin the same plot.
+- target IDs
+- grammar labels
+- coverage tables
+- audit results
+- QA notes
 
-For full-range outputs, complete the internal coverage audit from `references/test-range-anthology.md` before treating the anthology as finished.
+unless the user asks.
 
 ## Reference Files
 
-- `references/short-story-craft.md` — compact storytelling techniques for hooks, turns, pacing, and endings
-- `references/genre-presets.md` — genre-specific promises, plot pressures, and ending styles
-- `references/target-sentence-embedding.md` — exact-sentence preservation and natural insertion strategy
-- `references/japanese-prose-style.md` — natural Japanese narrative voice and anti-textbook rules
-- `references/natural-japanese-fiction-pass.md` — mandatory native-Japanese revision pass for rhythm, translationese, AI-like mannerisms, and English-insert plausibility
-- `references/character-voice-dialogue.md` — mandatory character-specific dialogue system: voice cards, relationship register, substitution test, and read-aloud QA
-- `references/memory-design.md` — connect sentences to memorable scenes without overt teaching
-- `references/test-range-anthology.md` — distribute a full test range across varied stories with exact coverage
-- `references/quality-gates.md` — story-first, exactness, naturalness, character voice, and learning QA
+- `references/short-short-fiction-craft.md` — integrated short-short/flash-fiction craft: compression, hook, escalation, turn, subtext, frame, five-target architecture
+- `references/story-analysis-pass.md` — post-draft story diagnostic: foundation, characters, setting, turn, emotional architecture, resolution, reader engagement
+- `references/short-story-craft.md` — earlier compact-story guidance
+- `references/genre-presets.md` — genre-specific reader promises and pressures
+- `references/target-sentence-embedding.md` — exact target preservation and insertion
+- `references/japanese-prose-style.md` — natural Japanese narrative voice
+- `references/natural-japanese-fiction-pass.md` — mandatory Japanese revision
+- `references/character-voice-dialogue.md` — mandatory character-specific dialogue system
+- `references/ai-writing-textlint-gate.md` — AI-like vocabulary/structure detector workflow
+- `references/memory-design.md` — scene-based recall anchors
+- `references/test-range-anthology.md` — full-range distribution and coverage
+- `references/quality-gates.md` — final source, story, Japanese, dialogue, AI-style, genre, and learning QA
