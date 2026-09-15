@@ -1,53 +1,72 @@
 ---
 name: stealth-learning-short-fiction
-description: Use this skill when the user wants an engaging one-shot Japanese short-short story, light-novel-style reading passage, genre fiction, or narrative learning material that naturally embeds exact target English sentences and their Japanese translations for memorization or test preparation. Suitable for comedy, slice-of-life, romance, sports, horror, mystery, suspense, SF, fantasy, isekai, family, friendship, and other genres. By default, each complete story uses exactly five source-grounded target English sentences and remains enjoyable even if every English insert is removed.
+description: Use this skill when the user wants an engaging Japanese short-short story, light-novel-style reading passage, genre fiction, or narrative learning material that naturally embeds exact target English sentences and their Japanese translations for memorization or test preparation. Suitable for comedy, slice-of-life, romance, sports, horror, mystery, suspense, SF, fantasy, isekai, family, friendship, and other genres. By default, the user's selected source range becomes one complete story, and story length scales with the number and narrative density of source-grounded target sentences.
 ---
 
 # Stealth Learning Short Fiction
 
 ## Purpose
 
-Create **one-shot Japanese short-short fiction that is genuinely worth reading**, while embedding exact English test/example sentences so that scenes, emotions, and story events become memory anchors.
+Create **Japanese fiction that is genuinely worth reading**, while embedding exact English test/example sentences so that scenes, emotions, and story events become memory anchors.
 
 The primary product is fiction. Learning is hidden underneath the story design.
 
 This skill is not limited to fantasy, isekai, school stories, romance, or any single genre.
 
-## Default Format
+## Default Unit: User-Selected Range = One Story
 
-Unless the user specifies otherwise:
+Unless the user explicitly asks for multiple stories, an anthology, separate genres, or separate outputs:
 
-- one complete standalone story
-- about **2,000–3,500 Japanese characters**
-- **exactly 5 target English sentences** when at least five source targets are available
-- each target English sentence is immediately followed by its Japanese translation
-- 2–4 important characters
-- 1–3 locations
-- 1–3 scenes
-- one central incident / conflict / question / emotional problem
-- one meaningful turn
-- one satisfying genre-appropriate aftertaste
-- overwhelmingly Japanese prose
+- treat the exact lesson/test/page/range selected by the user as **one story unit**
+- include **all source-grounded target sentences in that selected range**
+- do **not** automatically split the range into batches of five or any other fixed count
+- do **not** invent review targets merely to reach a target count
+- keep one central protagonist or one central relationship/problem unless the genre strongly requires otherwise
+- allow multiple scenes inside the same story when needed, but preserve continuity of character, conflict, and emotional investment
+- target order follows story logic rather than textbook order unless source order is naturally better
+- every target English sentence is immediately followed by its Japanese translation
+- the story remains overwhelmingly Japanese
 
-The target count is fixed; the plot is not. Do not write five mini-scenes merely to justify five sentences.
+The user's selected range is the primary boundary. Target count is not.
 
-If fewer than five source-grounded targets exist, use all available targets and never invent a fifth sentence.
+### Default Length Scaling
 
-For a full-range anthology where the final group contains fewer than five unused targets, prefer **spaced review**: combine the remaining new targets with one or more previously used source targets so the final story still contains five exact source-grounded targets. Track which targets are new coverage and which are deliberate review. Never present an invented sentence as a target.
+Use the following as a planning range, not a quota:
+
+| Number of target sentences | Approximate Japanese story length |
+|---|---:|
+| 1–2 | 800–1,400 characters |
+| 3–4 | 1,400–2,200 characters |
+| 5–6 | 2,200–3,200 characters |
+| 7–9 | 3,200–4,500 characters |
+| 10–12 | 4,500–6,000 characters |
+| 13+ | scale upward as needed; do not split solely because of count |
+
+A useful rough heuristic is **500–700 base characters + roughly 400–500 characters per target sentence**, but story needs override arithmetic.
+
+Length must also reflect semantic density:
+
+- simple factual/routine targets may need less space
+- regret, conflict, relationship change, mystery, suspense, or emotional targets may need more space
+- do not pad to hit a number
+- do not compress so aggressively that the reader cannot become emotionally invested
+
+If a large selected range would become unwieldy, first use internal scene or act breaks within the same story. Split into separate stories only when the user requests it or when the selected source itself clearly consists of separate requested units.
 
 ## Core Principle
 
-> Story first. Five exact targets second. Explanation last.
+> Story first. User-selected target set second. Explanation last.
 
 A finished story must pass all of these tests:
 
-1. **Story-First Test** — remove all five English blocks and translations; the Japanese story still works as fiction.
-2. **Five-Target Cohesion Test** — all five targets belong to one coherent story rather than five stitched examples.
-3. **Memory-Anchor Test** — each target has a specific memorable scene, action, joke, fear, relationship beat, image, or revelation.
-4. **Short-Short Craft Test** — the story has an appropriate scope, strong opening, escalation, a meaningful turn, and an ending that rewards the setup.
-5. **Native-Japanese Test** — the Japanese reads like natural contemporary fiction, not translated or prompt-generated prose.
-6. **Character-Voice Test** — dialogue belongs to the specific speaker/listener relationship and emotional state.
-7. **AI-Writing Review** — AI-like wording/structure detectors are used as warnings when available, followed by human-style contextual judgment rather than blind replacement.
+1. **Story-First Test** — remove all English blocks and translations; the Japanese story still works as fiction.
+2. **Target-Set Cohesion Test** — the selected targets belong to one coherent narrative rather than a chain of stitched examples.
+3. **Emotional-Investment Test** — the reader has enough time with the protagonist, relationship, problem, or mystery to care what happens next.
+4. **Memory-Anchor Test** — each target has a specific memorable scene, action, joke, fear, relationship beat, image, or revelation.
+5. **Short-Fiction Craft Test** — the story has an appropriate scope, strong opening, escalation, a meaningful turn, and an ending that rewards the setup.
+6. **Native-Japanese Test** — the Japanese reads like natural contemporary fiction, not translated or prompt-generated prose.
+7. **Character-Voice Test** — dialogue belongs to the specific speaker/listener relationship and emotional state.
+8. **AI-Writing Review** — AI-like wording/structure detectors are used as warnings when available, followed by contextual judgment rather than blind replacement.
 
 If any test fails, revise before delivery.
 
@@ -55,17 +74,18 @@ If any test fails, revise before delivery.
 
 When the user supplies a textbook, test, example bank, worksheet, PDF, DOCX, image, or other source:
 
-- Treat supplied material as authoritative for the target sentences and scope.
-- Extract target English exactly from the source.
-- Do not silently modernize, simplify, paraphrase, correct, or replace a target sentence.
-- If a source sentence appears erroneous or ambiguous, preserve it for exact-test practice and flag the concern separately rather than silently changing it.
-- Use the source's Japanese translation when faithful reproduction is requested.
-- If natural translation is allowed, do not change the target meaning.
-- Do not invent grammar rules or test coverage unsupported by the source.
+- treat supplied material as authoritative for target sentences and scope
+- extract target English exactly from the source
+- do not silently modernize, simplify, paraphrase, correct, or replace a target sentence
+- if a source sentence appears erroneous or ambiguous, preserve it for exact-test practice and flag the concern separately rather than silently changing it
+- use the source's Japanese translation when faithful reproduction is requested
+- if natural translation is allowed, do not change the target meaning
+- do not invent grammar rules or test coverage unsupported by the source
+- never reconstruct source sentences from memory when the source is available
 
 Maintain an internal target-sentence ledger before drafting.
 
-For an entire lesson/test range, also use `references/test-range-anthology.md`.
+For a lesson/test/range with multiple targets, also use `references/test-range-anthology.md`; despite the historical filename, its default behavior is now **single-story range planning**, not automatic anthology splitting.
 
 ## Reader-Facing Target Format
 
@@ -84,20 +104,35 @@ Never make Japanese characters suddenly speak/type English merely because the ta
 
 ## Workflow
 
-### 1. Lock the five targets
+### 1. Lock the selected target set
 
-Before inventing the plot, record exactly five source targets when available:
+Before inventing the plot, record every source target in the user-selected range:
 
 - exact English
 - exact/approved Japanese translation
 - source location
 - grammar/meaning supported by the source
 - semantic situation
-- whether this is new coverage or spaced review
+- whether it is new coverage or deliberate review only when review was actually requested
 
 Do not draft until the strings are stable.
 
-### 2. Create the entertainment promise first
+### 2. Set the story length from target count and story needs
+
+Use the length-scaling table as a starting point.
+
+Then adjust for:
+
+- number of required targets
+- how different their semantic situations are
+- how much setup is needed to make them belong to one incident or relationship
+- genre pacing
+- emotional depth
+- number of scenes needed
+
+Never split merely because there are more than five targets.
+
+### 3. Create the entertainment promise first
 
 Ignore English for a moment and state internally why a student would continue reading.
 
@@ -121,7 +156,7 @@ Examples of good promises:
 - a player planning to quit discovers something that changes the decision
 - one ordinary detail contradicts everyone's version of an event
 
-### 3. Lock character voice before dialogue
+### 4. Lock character voice before dialogue
 
 If the story contains dialogue, read `references/character-voice-dialogue.md`.
 
@@ -142,7 +177,7 @@ Create an internal voice card for each speaker:
 
 Do not use age/gender stereotypes as a voice generator.
 
-### 4. Build the short-short blueprint
+### 5. Build the story blueprint
 
 Read `references/short-short-fiction-craft.md`.
 
@@ -155,29 +190,22 @@ Default story architecture:
 5. Consequence
 6. Aftertaste
 
-Keep the scope compact. This is not a miniature novel.
-
-Then create an internal five-target placement map:
+Then create an internal target-placement map with one row per target:
 
 | Target | Story job | Approximate region | Memory anchor |
 |---|---|---|---|
-| T1 | fact/state/plan/setup | opening/setup | specific cue |
-| T2 | deepen/complicate | early-middle | specific cue |
-| T3 | history/reveal/relationship | middle | specific cue |
-| T4 | intensify turn/consequence | late-middle | specific cue |
-| T5 | reinforce outcome/aftertaste | late | specific cue |
-
-This table is a planning aid, not a rigid formula.
+| T1 | establish / complicate / reveal / decide / pay off | opening / middle / late | specific cue |
 
 Rules:
 
-- all five targets need distinct narrative jobs
-- avoid back-to-back target blocks
-- do not create five separate incidents merely for five sentences
-- target order follows story logic, not textbook order, unless both happen to match
+- every target needs a real narrative job
+- avoid back-to-back target blocks unless the scene genuinely requires it
+- do not create one separate incident per target
+- target order follows story logic, not source order, unless both happen to match
 - no target may appear only because it was unused
+- if several targets seem incompatible, redesign the central incident, relationship, setting, or timeline before considering a split
 
-### 5. Draft the Japanese story first
+### 6. Draft the Japanese story first
 
 Draft the actual fiction primarily in Japanese, using placeholders for target moments if useful.
 
@@ -199,7 +227,7 @@ Do not manufacture a light-novel voice through:
 
 Believable Japanese comes first.
 
-### 6. Embed the five targets surgically
+### 7. Embed all selected targets surgically
 
 Insert each exact target only where the scene already supports its meaning.
 
@@ -214,18 +242,18 @@ Do not:
 - pause to explain grammar
 - invent an unnatural situation solely to justify English
 
-If the fifth target does not fit, redesign the story earlier. Do not append it near the ending as homework.
+If any target does not fit, redesign the plot earlier. Do not append leftover targets near the ending as homework.
 
-### 7. Run the Short-Short Craft Pass
+### 8. Run the Short-Fiction Craft Pass
 
 Use `references/short-short-fiction-craft.md` again after drafting.
 
 Specifically check:
 
 - opening hook
-- compact scope
+- appropriate scope for the selected target count
 - paragraph economy
-- character compression
+- character compression without emotional thinness
 - subtext
 - setting that affects events
 - escalation
@@ -235,10 +263,11 @@ Specifically check:
 - twist dependency
 - vignette trap
 - miniature-novel problem
+- whether the reader has enough uninterrupted time with the same people/problem to care
 
 Revise structure before polishing sentences.
 
-### 8. Run the Story Analysis Pass
+### 9. Run the Story Analysis Pass
 
 Read `references/story-analysis-pass.md`.
 
@@ -254,12 +283,12 @@ Audit:
 - information flow
 - subtext
 - resolution/aftertaste
-- five-target cohesion
+- target-set cohesion
 - reader engagement
 
 Fix macro problems before micro prose.
 
-### 9. Run the mandatory Natural Japanese + Character Voice Pass
+### 10. Run the mandatory Natural Japanese + Character Voice Pass
 
 Read both in full:
 
@@ -287,7 +316,7 @@ Run:
 - speaker substitution test
 - listener/register test
 
-### 10. Run the AI-Writing Detector Review
+### 11. Run the AI-Writing Detector Review
 
 Read `references/ai-writing-textlint-gate.md`.
 
@@ -306,21 +335,22 @@ Classify findings as:
 
 Do not chase zero warnings or mechanically replace words.
 
-### 11. Run learning revision
+### 12. Run learning revision
 
 Verify:
 
-- exactly five source-grounded targets appear when five are available
-- all five match the source exactly
+- every source-grounded target in the user's selected range appears
+- every target matches the source exactly
 - every target has the correct Japanese translation directly below it
 - each target has a distinct memory anchor
 - surrounding Japanese does not distort target meaning
 - no grammar lecture leaked into the story
-- new coverage/review status is tracked internally for anthology work
+- no target was invented to satisfy a count
+- the selected range was not silently split because of target count
 
 Do not let this pass reintroduce unnatural Japanese.
 
-### 12. Run final quality gates
+### 13. Run final quality gates
 
 Use `references/quality-gates.md`.
 
@@ -328,8 +358,10 @@ Automatic failure patterns include:
 
 - worksheet wearing a costume
 - grammar teacher disguised as a character
-- five example sentences connected by filler
-- five unrelated mini-scenes
+- example sentences connected by filler
+- one mini-scene per target
+- automatic five-sentence batching
+- needless protagonist/world resets within one requested range
 - overcomplicated plot built only to justify targets
 - technically grammatical but AI-like Japanese
 - generic teenager dialogue
@@ -341,7 +373,7 @@ Automatic failure patterns include:
 
 If the user specifies a genre, follow it.
 
-If unspecified, choose from the target semantics and vary across stories. Do not default to a single genre.
+If unspecified, choose from target semantics. For a single selected range, choose one coherent genre or a compatible blend rather than changing genre every few targets.
 
 Possible genres include:
 
@@ -363,15 +395,18 @@ Possible genres include:
 
 Use `references/genre-presets.md` as guidance, not rigid templates.
 
-## Anthology Rule
+## Multiple-Story / Anthology Mode
 
-For multiple one-shot stories:
+Use multiple one-shot stories only when the user explicitly requests multiple stories, an anthology, genre variation, separate units, or clearly separate outputs.
 
-- standardize on five targets per story
-- vary genre, protagonist, relationship, conflict, ending shape, POV, and rhythm
-- do not reuse the same plot skeleton with changed nouns
-- if the last batch has fewer than five unused targets, use spaced-review targets from earlier stories rather than inventing content
-- internal coverage ledger must distinguish new targets from repeated review targets
+When multiple stories are requested:
+
+- divide by the user's requested units first, not by a fixed target count
+- do not standardize automatically on five targets per story
+- scale each story's length to the targets assigned to that story
+- vary genre, protagonist, relationship, conflict, ending shape, POV, and rhythm when variation is desired
+- never invent a target to equalize story counts
+- track coverage internally so no required target is dropped
 
 ## Reader-Facing Output
 
@@ -379,7 +414,7 @@ By default, show only:
 
 1. title
 2. story
-3. the five embedded target English blocks with their Japanese translations as part of the story flow
+3. all embedded target English blocks with their Japanese translations as part of the story flow
 
 Do not expose:
 
@@ -393,7 +428,7 @@ unless the user asks.
 
 ## Reference Files
 
-- `references/short-short-fiction-craft.md` — integrated short-short/flash-fiction craft: compression, hook, escalation, turn, subtext, frame, five-target architecture
+- `references/short-short-fiction-craft.md` — integrated short-fiction craft: compression, hook, escalation, turn, subtext, frame, variable-target architecture
 - `references/story-analysis-pass.md` — post-draft story diagnostic: foundation, characters, setting, turn, emotional architecture, resolution, reader engagement
 - `references/short-story-craft.md` — earlier compact-story guidance
 - `references/genre-presets.md` — genre-specific reader promises and pressures
@@ -403,5 +438,5 @@ unless the user asks.
 - `references/character-voice-dialogue.md` — mandatory character-specific dialogue system
 - `references/ai-writing-textlint-gate.md` — AI-like vocabulary/structure detector workflow
 - `references/memory-design.md` — scene-based recall anchors
-- `references/test-range-anthology.md` — full-range distribution and coverage
+- `references/test-range-anthology.md` — selected-range single-story planning, optional anthology behavior, and coverage
 - `references/quality-gates.md` — final source, story, Japanese, dialogue, AI-style, genre, and learning QA
