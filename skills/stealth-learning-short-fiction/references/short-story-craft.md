@@ -44,6 +44,8 @@ Useful changes include:
 
 Keep the event small enough to complete within the requested length.
 
+For a larger selected target set, extend the same central movement across a few causally linked scenes instead of restarting with a new protagonist or unrelated incident.
+
 ## 3. Make the protagonist want something immediately
 
 The protagonist should usually want something concrete in the scene:
@@ -153,18 +155,27 @@ A short ending should usually do one of these:
 
 Avoid ending with a generic moral such as "そして彼は大切なことを学んだ。"
 
-## 10. Protect simplicity
+## 10. Protect simplicity without dropping required targets
 
-When the story begins to feel crowded, remove in this order:
+When the story begins to feel crowded, simplify in this order:
 
 1. extra worldbuilding
 2. secondary characters
 3. backstory explanation
 4. additional twists
 5. secondary locations
-6. extra target sentences that belong in another story
+6. redundant transitions or duplicated emotional explanation
 
-Do **not** first remove the emotional logic that makes the ending matter.
+Do **not** remove a source-grounded target from the user's selected range merely to make the story shorter.
+
+If required targets still feel crowded after simplification:
+
+- increase story length within the variable-length guidance
+- merge semantically compatible targets into the same incident
+- redesign scene order
+- use a small number of connected scene breaks
+
+Do not automatically move required targets into another story unless the user asks for multiple stories.
 
 ## 11. Five-beat compact structure
 
@@ -185,7 +196,7 @@ Reveal, decide, fail, succeed, scare, connect, misunderstand, or reverse.
 ### Aftertaste
 End with the genre's desired emotional residue.
 
-The beats may be extremely short. They are functions, not required headings.
+The beats may be extremely short. They are functions, not required headings. `Five-beat` refers to story structure, not target-sentence count.
 
 ## 12. Final craft check
 
@@ -195,5 +206,7 @@ Before delivery, ask internally:
 - Is the first paragraph stronger than background exposition?
 - Does every major paragraph either move the incident or deepen emotion/atmosphere?
 - Does something change by the end?
+- Does emotional investment accumulate instead of reset?
+- Are all targets in the selected range naturally integrated?
 - Is the last line specific rather than generic?
 - Would a student plausibly finish this even if there were no test tomorrow?
