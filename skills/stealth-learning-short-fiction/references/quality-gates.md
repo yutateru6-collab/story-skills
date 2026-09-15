@@ -8,12 +8,13 @@ Run all applicable gates before delivery.
 
 Pass only if:
 
-- every required target sentence matches the authoritative source exactly when exactness is required
+- every required target sentence in the user's selected range matches the authoritative source exactly when exactness is required
 - every target has the correct Japanese translation directly below it
 - no unsupported grammar rule or test-scope claim has been added
 - any source ambiguity or likely error is flagged outside the story rather than silently changed
+- no source target was omitted because it was inconvenient to fit
 
-Fail if the story contains a "better" sentence that is not the actual test sentence.
+Fail if the story contains a `better` sentence that is not the actual test sentence.
 
 ## Gate B — Story-First Test
 
@@ -24,10 +25,26 @@ Ask:
 - Does the Japanese story still make sense?
 - Is there still a hook?
 - Does the protagonist still want something?
+- Does pressure accumulate?
 - Does something change?
 - Does the ending still land?
 
 If removing the targets destroys the story, the story is too dependent on instructional scaffolding. Rewrite.
+
+## Gate B2 — Selected-Range Unity
+
+Unless the user explicitly requested multiple stories, pass only if the selected range functions as **one story**.
+
+Fail when:
+
+- the output silently becomes batches of five targets
+- the protagonist/world resets after a fixed number of targets
+- several unrelated mini-stories are joined under one title
+- scene changes exist only to accommodate leftover target sentences
+- characters disappear as soon as their target sentence has been used
+- emotional investment repeatedly returns to zero
+
+For a larger target set, prefer increased length and connected scene breaks before considering a split.
 
 ## Gate C — Natural Japanese / Native-Japanese Test
 
@@ -44,7 +61,7 @@ Pass only if:
 - exposition is proportionate to length
 - no teacher-like commentary leaks into ordinary narration
 - no generic moral is attached to the ending
-- no conspicuous "AI cleverness" is inserted only to sound witty, emotional, or light-novel-like
+- no conspicuous `AI cleverness` is inserted only to sound witty, emotional, or light-novel-like
 - inner monologue does not restate and then explain what the reader already understood
 - the prose survives a mental read-aloud without awkward word order
 
@@ -52,10 +69,10 @@ Automatic warning patterns:
 
 - repeated fragment chains such as noun / noun / reaction / punchline
 - several paragraphs ending with quotable one-liners
-- repeated rhetorical question → self-answer inner monologue
-- generic romance signals repeated in narration: heart pounding, face heating, "maybe this is love," etc.
+- repeated rhetorical question -> self-answer inner monologue
+- generic romance signals repeated in narration
 - repeated dramatic markers: `……`, `――`, exclamation marks, one-sentence paragraphs
-- cliché closing abstractions such as 「たぶん俺の負けだった」 unless strongly earned by character voice
+- cliché closing abstractions unless strongly earned by character voice
 
 Fail if the Japanese is grammatically correct but still sounds noticeably generated, translated, mannered, or like a parody of light-novel prose.
 
@@ -104,8 +121,6 @@ FAIL if:
 - both characters have the same sentence rhythm
 - a line feels natural on paper but unlikely to leave a person's mouth
 
-Example: 「どうしたの、そんな顔して」 is not universally wrong. It may fit a gentle character. But it must never be the automatic default for a close male high-school friend simply because it is grammatically natural. The line must come from the actual character and relationship.
-
 ## Gate C3 — AI-Writing Detector / textlint Review
 
 Read and apply `ai-writing-textlint-gate.md` before deciding PASS.
@@ -135,11 +150,9 @@ Automatic FAIL if the revision process:
 - alters a protected test sentence or translation
 - makes the prose more formal or abstract just to remove a warning
 
-Pay special attention to **frequency**, not only presence. A single `〜した瞬間` or genre-appropriate `静かに消えた` may be natural; repeated use within one short piece or across an anthology is a stronger AI-style signal.
+Pay special attention to frequency, not only presence.
 
 If textlint cannot run in the current environment, perform the manual fallback in `ai-writing-textlint-gate.md`.
-
-This gate supplements Gate C and Gate C2. Passing textlint does not prove the prose is natural.
 
 ## Gate D — Target Naturalness
 
@@ -149,11 +162,11 @@ For each target sentence:
 - Does the target perform a story job?
 - Is the English placement understandable without an artificial excuse?
 - Does the Japanese translation fit the scene?
-- If the characters are Japanese, is there a real reason they would speak/type the exact English sentence?
+- Does the target connect to the same central incident, relationship, conflict, or emotional line as the rest of the selected range?
 
 If no natural in-story English context exists, use a separated reader-facing target block at the matching moment. Do not invent an English chat, announcement, or conversation merely to justify the sentence.
 
-If a sentence has no natural job, move it to another story.
+If a target has no natural job, **redesign the plot or scene order first**. Do not automatically move it to another story.
 
 ## Gate E — Entertainment
 
@@ -167,23 +180,36 @@ A strong story should have most of the following:
 - a turn, discovery, decision, scare, joke, success, or failure
 - a specific ending with emotional aftertaste
 - at least one detail that belongs specifically to this story
+- enough time with the protagonist/relationship/problem for the reader to care
 
-Fail if the story is merely "correct" but dull.
+Fail if the story is merely `correct` but dull.
 
-## Gate F — Simplicity
+## Gate F — Simplicity and Length Fit
 
 Check for unnecessary complexity.
 
 Warning signs:
 
-- more than three major characters in a very short piece
+- too many major characters for the story length
 - several locations with little payoff
 - multiple unrelated twists
 - long worldbuilding explanation
 - backstory longer than the live scene
 - plot devices invented only to accommodate target sentences
 
-Simplify before increasing length.
+Simplify before increasing complexity.
+
+But do **not** remove required targets from the user's selected range merely to make the story shorter.
+
+If the target set is dense:
+
+1. remove redundant exposition and secondary complications
+2. combine compatible targets into the same incident
+3. increase story length within the variable-length guidance
+4. use connected scene breaks
+5. redesign the central premise if necessary
+
+Automatic splitting is not a simplification strategy.
 
 ## Gate G — Genre Integrity
 
@@ -194,16 +220,18 @@ Examples:
 - Horror must create unease or fear, not just contain a ghost.
 - Sports must contain effort, pressure, competition, or physical stakes, not just mention a sport.
 - Romance must contain vulnerability, anticipation, intimacy, or relational movement, not just a crush.
-- Rom-com must contain relational movement **and** comic timing; do not substitute a series of witty retorts for actual chemistry.
+- Rom-com must contain relational movement and comic timing.
 - Comedy must actually contain comic timing or payoff.
 - Mystery must contain a fair question and meaningful clue/reveal.
 - Slice-of-life must reward attention to small human detail.
 
 Do not rely on costumes and scenery alone to signal genre.
 
-## Gate H — Variation Across a Set
+## Gate H — Variation Across Multiple Stories
 
-When producing multiple stories, compare them side by side.
+Use this gate only when the user actually requested multiple stories.
+
+Compare them side by side.
 
 Fail if several stories repeat:
 
@@ -215,11 +243,10 @@ Fail if several stories repeat:
 - the same mentor lecture
 - the same emotional arc
 - the same sentence-fragment rhythm
-- the same "clever" first-person voice
+- the same `clever` first-person voice
 - the same friend/sidekick voice regardless of character
-- the same textlint-flagged wording or phrase pattern across multiple stories
 
-Vary genre logic and character voice, not just nouns.
+Do not invoke this gate as a reason to split one requested range into multiple stories.
 
 ## Gate I — Memory Anchor
 
@@ -233,6 +260,8 @@ Pass only if the cue is specific and clearly connected to the sentence's meaning
 
 If the cue is generic, strengthen the scene.
 
+Distinct anchors do not require distinct mini-stories. Several targets may have different anchors inside the same central incident.
+
 ## Gate J — No Worksheet Costume
 
 Automatic fail patterns:
@@ -241,7 +270,8 @@ Automatic fail patterns:
 - a teacher walks in to explain the target
 - targets are listed consecutively with filler between them
 - each paragraph exists only to introduce another sentence
-- the final paragraph summarizes "what we learned"
+- each target gets its own unrelated mini-scene
+- the final paragraph summarizes `what we learned`
 - every target is spoken by a character despite unnatural context
 - Japanese characters speak/type English solely because the author needs to place the target
 
@@ -264,7 +294,29 @@ Then remove half of the marked items and reread.
 
 If the story becomes more believable, keep the quieter version.
 
-A short story does not need every paragraph to advertise that it is a story.
+## Gate L — Length Scaling Check
+
+Compare target count to story length.
+
+Planning guide:
+
+| Target sentences | Approximate Japanese story length |
+|---:|---:|
+| 1–2 | 800–1,400 characters |
+| 3–4 | 1,400–2,200 characters |
+| 5–6 | 2,200–3,200 characters |
+| 7–9 | 3,200–4,500 characters |
+| 10–12 | 4,500–6,000 characters |
+| 13+ | scale upward as needed |
+
+This is not a hard word-count gate.
+
+FAIL when:
+
+- the story is obviously padded to satisfy the table
+- the story is so compressed that character investment cannot form
+- targets arrive so frequently that the work reads like a worksheet
+- the writer chose multiple stories merely because the target count exceeded five
 
 ## Final Delivery Check
 
@@ -272,13 +324,16 @@ Before calling the work final, verify:
 
 - title is interesting without mentioning grammar unless requested
 - requested genre is respected
-- requested length is respected without padding
-- target count is appropriate for story length
-- exact targets are verified
+- the user's selected source range is respected exactly
+- target count is determined by the selected range, not by a fixed quota
+- length is appropriate for target count and story needs without padding
+- all exact targets are verified
 - translations are directly below targets
 - story remains primarily Japanese
+- the selected range remains one story unless the user asked otherwise
 - opening is strong
 - ending is specific
+- emotional investment accumulates instead of resetting
 - mandatory Natural Japanese Fiction Pass was completed
 - mandatory Character Voice & Dialogue pass was completed for all dialogue stories
 - AI-writing detector/textlint review was completed when available, or manual fallback was used
