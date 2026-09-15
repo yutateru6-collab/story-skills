@@ -1,12 +1,18 @@
-# Test-Range Anthology Planning
+# Selected-Range Story Planning
 
-Use this workflow when the user wants an entire test range, example bank, lesson set, or worksheet collection turned into entertaining one-shot short-short stories.
+Use this workflow when the user wants a lesson, test range, example bank selection, page range, or worksheet selection turned into entertaining fiction.
+
+The historical filename contains `anthology`, but **anthology mode is no longer the default**.
 
 ## Goal
 
-Cover the required target sentences while keeping every individual story enjoyable as fiction.
+Cover every required target sentence in the **user-selected source range** while keeping the result enjoyable as fiction.
 
-The output should feel like a varied short-story anthology whose hidden constraint happens to be complete test-range coverage.
+Default behavior:
+
+> **One user-selected range = one complete story.**
+
+Do not divide the range merely because it contains more than five target sentences.
 
 ## 1. Extract before inventing
 
@@ -14,129 +20,163 @@ Read the authoritative source first.
 
 Build a coverage ledger with one row per exact target sentence:
 
-| ID | Source | Exact English | Japanese | Grammar/meaning supported by source | Story | New/Review | Status |
-|---|---|---|---|---|---|---|---|
-| T01 | Lesson 3 | ... | ... | ... | Story A | New | planned |
+| ID | Source | Exact English | Japanese | Grammar/meaning supported by source | Story job | Status |
+|---|---|---|---|---|---|---|
+| T01 | Lesson 3 | ... | ... | ... | ... | planned |
 
 Do not reconstruct sentences from memory if the source is available.
 
-## 2. Separate inventory from story design
+## 2. Respect the user's selected boundary
 
-First determine exactly what must be covered.
-
-Only then design stories.
-
-This prevents a fun premise from silently dropping inconvenient targets.
-
-## 3. Default density: five targets per story
-
-The standard anthology unit is:
-
-- one complete standalone short-short story
-- about 2,000–3,500 Japanese characters
-- exactly **five source-grounded target sentences**
-
-Do not treat five as permission to write five disconnected scenes.
-
-All five must fit one central story.
-
-## 4. Group by semantic compatibility, not source order
-
-Group targets that can plausibly belong to the same incident or emotional situation.
+The user's instruction determines the story unit.
 
 Examples:
 
-- sports action + sports history + future plan + recovery + expectation
-- travel arrangement + prior experience + schedule + delay + future completion
-- social-media obligation + accidental message + regret + possibility + advice
-- daily routine + interruption + decision + result + future plan
+- `Test 4 only` -> one story using every target in Test 4
+- `Lesson 3 example sentences 1–8` -> one story using those eight targets
+- `pages 22–24` -> one story using targets in that selected page range
+- `Tests 2 and 3 as separate stories` -> two stories because the user explicitly requested separate units
 
-Do not group sentences merely because they are adjacent in the textbook.
+Do not reinterpret a selected range as batches of five.
 
-## 5. Handle remainders without inventing targets
+Do not silently expand the range to adjacent lessons.
 
-If the total number of unused targets is not divisible by five:
+Do not silently omit inconvenient targets.
 
-- fill complete five-target stories with unused targets first
-- for the final story, use every remaining unused target
-- add previously covered source targets as deliberate **spaced-review targets** until the story contains five source-grounded targets
-- choose review targets that naturally fit the final story
-- track review targets separately so coverage calculations remain honest
+## 3. Scale length with target count
 
-Example: 9 unique source targets -> Story A uses 5 new targets; Story B uses 4 new targets + 1 review target.
+Use this as a planning guide:
 
-Never invent a fifth target simply to satisfy the format.
+| Target sentences | Approximate Japanese story length |
+|---:|---:|
+| 1–2 | 800–1,400 characters |
+| 3–4 | 1,400–2,200 characters |
+| 5–6 | 2,200–3,200 characters |
+| 7–9 | 3,200–4,500 characters |
+| 10–12 | 4,500–6,000 characters |
+| 13+ | scale upward as needed |
 
-## 6. Five-target story planning
+A useful rough heuristic is **500–700 base characters + about 400–500 characters per target**, but narrative needs override the formula.
 
-Before drafting each story, make a target map:
+Adjust upward when targets require:
+
+- relationship development
+- regret or emotional consequence
+- mystery setup/payoff
+- suspense escalation
+- multiple causally connected scenes
+
+Adjust downward when targets are semantically close and can naturally share one event.
+
+Do not pad to hit a number.
+
+Do not compress so much that readers have no time to care about the characters.
+
+## 4. Build one central narrative before target placement
+
+First determine exactly what must be covered.
+
+Then design a story that can carry the entire selected set.
+
+Create:
+
+- one central protagonist or central relationship
+- one immediate want/problem/question
+- one main source of pressure
+- one meaningful turn
+- one consequence
+- one ending with aftertaste
+
+If there are many targets, use multiple scenes inside the same story rather than resetting the protagonist and world.
+
+## 5. Group by semantic compatibility inside the story
+
+Target order does not need to follow source order.
+
+Place targets where their meanings naturally fit the evolving incident.
+
+Examples:
+
+- routine -> disruption -> mistake -> regret -> repair
+- plan -> preparation -> unexpected obstacle -> changed decision -> future consequence
+- sports state -> training -> interruption -> result -> next goal
+- social-media habit -> conflict -> wrong message -> regret -> relationship change
+
+The purpose is not to create separate target clusters. The purpose is to make the targets function as beats in one story.
+
+## 6. Variable-target placement map
+
+Before drafting, create a placement map with one row per target:
 
 | Target | Story function | Story region | Memory anchor |
 |---|---|---|---|
-| T01 | establish fact/state/plan | setup | specific scene |
-| T02 | complicate | early-middle | specific scene |
-| T03 | deepen history/relationship | middle | specific scene |
-| T04 | intensify turn/consequence | late-middle | specific scene |
-| T05 | reinforce outcome/aftertaste | late | specific scene |
+| T01 | establish fact/state | setup | specific scene cue |
+| T02 | complicate | early-middle | specific scene cue |
+| T03 | reveal history/relationship | middle | specific scene cue |
+| T04 | intensify turn | late-middle | specific scene cue |
+| T05 | reinforce consequence | late | specific scene cue |
+| ... | ... | ... | ... |
 
-Do not force this exact order if the story works better another way.
+Rules:
 
-The important rule is that every target has a real story job.
+- every target needs a genuine story function
+- one target does not require one scene
+- avoid target blocks back-to-back unless strongly justified
+- do not append leftovers at the end
+- if one target does not fit, redesign the premise or timeline before considering a split
 
-## 7. Genre distribution
+## 7. Emotional continuity outranks packing efficiency
 
-For a multi-story set, create a genre plan before drafting.
+A technically complete story can still fail if the reader keeps being emotionally reset.
 
-Example internal plan:
+Automatic warning signs:
 
-| Story | Genre | Reader promise | Target IDs | Ending shape |
-|---|---|---|---|---|
-| A | comedy | escalating embarrassment | T01–T05 | payoff/punchline |
-| B | horror | normal place becomes wrong | T06–T09 + review T02 | chilling implication |
-| C | sports | pressure + recognition | T10–T14 | earned decision |
+- new protagonist every few targets
+- unrelated incidents joined only by transition phrases
+- several mini-stories wearing one title
+- repeated `the next day`, `after that`, or large time jumps only to accommodate targets
+- characters disappearing immediately after their target sentence is used
 
-Do not reuse this exact sequence automatically.
+Prefer a single developing relationship, conflict, mystery, goal, or pressure line.
 
-Across the anthology, vary:
+## 8. Internal scene breaks are allowed
 
-- genre
-- POV
-- age/personality of protagonist
-- relationship structure
-- source of conflict
-- scene rhythm
-- ending shape
-- how target blocks function
+A longer target set may require 2–4 scenes.
 
-## 8. Avoid genre monoculture
+Scene changes are acceptable when they preserve:
 
-Do not default repeatedly to:
+- the same protagonist or central relationship
+- causal continuity
+- emotional carryover
+- unresolved pressure from earlier scenes
+- setup/payoff across the story
 
-- isekai
-- school romance
-- wrong-message plots
-- supernatural mystery
-- teacher/mentor explanation scenes
+A scene break is not a new story.
 
-Use target semantics to open different kinds of stories.
+## 9. When multiple stories are actually appropriate
 
-## 9. Give every story an independent premise
+Use multiple stories only when:
 
-Each story must be pitchable without mentioning English or grammar.
+- the user explicitly requests an anthology or several stories
+- the user explicitly asks to separate lessons/tests/ranges
+- the supplied material is intentionally divided into independent requested units
+- the user asks for genre variation across separate outputs
 
-Weak:
+When multiple stories are requested, divide by the user's requested units first, not by a fixed number of targets.
 
-> A story that teaches present perfect.
+## 10. Do not invent remainder targets
 
-Strong:
+There is no longer a requirement to reach five targets per story.
 
-> A bench player planning to quit discovers that his rival has quietly been arriving before him every morning.
+Therefore:
 
-If the pitch contains a grammar label, redesign it.
+- never add an invented fifth target
+- never repeat an earlier target merely to make a count even
+- use spaced review only when the user asks for review/repetition or when a separate learning design explicitly calls for it
 
-## 10. Use the integrated short-short craft passes
+## 11. Use the integrated craft passes
 
-Every anthology story must use:
+Every story must use:
 
 - `short-short-fiction-craft.md`
 - `story-analysis-pass.md`
@@ -145,9 +185,9 @@ Every anthology story must use:
 - `ai-writing-textlint-gate.md`
 - `quality-gates.md`
 
-Do not lower story standards merely because many stories need to be produced.
+Do not lower story standards because the selected range contains many targets.
 
-## 11. Coverage is internal, not reader-facing
+## 12. Coverage is internal, not reader-facing
 
 Do not automatically print:
 
@@ -159,38 +199,40 @@ Do not automatically print:
 
 These are production controls. Reader-facing output remains fiction unless requested otherwise.
 
-## 12. Exact coverage audit
+## 13. Exact coverage audit
 
-After all stories are drafted:
+After drafting:
 
 1. re-read the authoritative source
 2. compare source inventory with the ledger
-3. verify every unique required target appears at least once
-4. verify each story contains five source-grounded targets when enough targets/review targets exist
-5. verify every English target appears exactly
-6. verify the correct Japanese translation follows it
-7. distinguish new coverage from deliberate review reuse
-8. identify accidental duplicates or omissions
-9. verify no invented sentence is presented as a source target
+3. verify every required target in the selected range appears
+4. verify every English target appears exactly
+5. verify the correct Japanese translation follows it
+6. identify accidental duplicates or omissions
+7. verify no invented sentence is presented as a source target
+8. verify the selected range was not silently split because of target count
+9. remove all target blocks mentally and confirm the remaining Japanese still forms one satisfying story
 
 Coverage is complete only when every required unique target is accounted for.
 
-## 13. Story quality outranks packing efficiency
+## 14. Story quality outranks packing efficiency
 
-Five targets are mandatory by default, but they must be designed into the story before drafting.
+Targets are mandatory, but they must be designed into the story before drafting.
 
-If a target damages a completed story, do not tack it on. Redesign the premise or target grouping and redraft.
+If a target damages a completed story, do not tack it on. Redesign the premise, scene order, relationship, or conflict and redraft.
 
-## 14. Reuse later for recall practice
+The goal is not the fewest characters per target. The goal is the strongest memorable story that honestly covers the user's selected source range.
 
-Keep the internal sentence-to-story mapping so later practice can reactivate scene memory.
+## 15. Reuse later for recall practice
+
+Keep the internal sentence-to-scene mapping so later practice can reactivate scene memory.
 
 Possible later modes when requested:
 
 - exact test blank-fill
 - Japanese-to-English recall
 - scene cue -> reconstruct sentence
-- "which story was this sentence from?"
+- `which scene was this sentence from?`
 - shuffled sentence recall
 
 Do not append exercises automatically to the fiction.
