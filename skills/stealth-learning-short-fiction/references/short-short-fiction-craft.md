@@ -1,34 +1,50 @@
-# Short-Short Fiction Craft
+# Short-Fiction Craft for Stealth Learning
 
-This reference is for one-shot Japanese short-short stories that are longer than micro fiction but still compact enough to read in one sitting.
+This reference is for one-shot Japanese short fiction that embeds exact English target sentences while remaining enjoyable as fiction.
 
-It adapts useful craft ideas from public MIT-licensed fiction skills such as jwynia/agent-skills `flash-fiction` and `story-analysis`, while tailoring them to this project's purpose: enjoyable Japanese fiction that embeds five exact English target sentences.
+It adapts useful craft ideas from public MIT-licensed fiction skills such as jwynia/agent-skills `flash-fiction` and `story-analysis`, while tailoring them to this project's purpose.
 
-## Default shape
+## Default shape is variable
+
+The user's selected source range determines the target set.
+
+Do **not** assume five targets.
 
 Unless the user specifies otherwise:
 
-- one complete story
-- about 2,000–3,500 Japanese characters
-- exactly 5 target English sentences when at least 5 source targets are available
-- 2–4 important characters
-- 1–3 locations
-- 1–3 scenes
-- one central incident, conflict, question, or emotional problem
-- one meaningful turn
-- one satisfying aftertaste
+- one selected source range becomes one complete story
+- every selected source-grounded target sentence must appear
+- story length scales with target count and narrative density
+- 2–4 important characters is a useful default, but longer selected ranges may justify more
+- use as few locations and scenes as the story needs
+- maintain one central incident, conflict, question, relationship, or emotional problem
+- include one meaningful turn
+- end with a satisfying genre-appropriate aftertaste
 
-Do not inflate the story simply to reach the target length. Length is there to give the five targets enough breathing room.
+### Length guide
+
+| Target sentences | Approximate Japanese story length |
+|---:|---:|
+| 1–2 | 800–1,400 characters |
+| 3–4 | 1,400–2,200 characters |
+| 5–6 | 2,200–3,200 characters |
+| 7–9 | 3,200–4,500 characters |
+| 10–12 | 4,500–6,000 characters |
+| 13+ | scale upward as needed |
+
+A rough heuristic is 500–700 base characters plus roughly 400–500 per target, but this is not a quota.
+
+Do not inflate the story simply to reach a target length. Do not compress it so far that the reader cannot become invested.
 
 ## 1. Do not write a miniature novel
 
-A short-short is not a summary of a long novel.
+A short story is not a summary of a long novel.
 
 Avoid:
 
 - childhood → school life → adulthood arcs
 - multiple unrelated conflicts
-- several time skips unless essential
+- several time skips used only to accommodate target sentences
 - full world-history explanations
 - a cast that needs introductions before the story can begin
 
@@ -46,6 +62,8 @@ Good scopes:
 - one strange visitor
 - one practice session that changes a relationship
 
+For larger target sets, extend the incident across a few causally linked scenes rather than replacing it with unrelated episodes.
+
 ## 2. Start with a reader promise
 
 Before drafting, state internally in one sentence why a student would keep reading even if no English appeared.
@@ -58,7 +76,7 @@ Examples:
 - sports: a small decision determines whether someone stays or quits
 - mystery: one ordinary detail contradicts what everyone believes happened
 
-If the premise is only "characters encounter five example sentences," reject it.
+If the premise is only `characters encounter the required example sentences`, reject it.
 
 ## 3. Use a compact arc with a real turn
 
@@ -71,36 +89,46 @@ The story should normally contain:
 5. Consequence — let the protagonist respond rather than merely explain.
 6. Aftertaste — finish on an image, action, exchange, discomfort, laugh, tenderness, or unanswered edge appropriate to the genre.
 
-The turn does not need to be a twist. In slice-of-life it may be a subtle realization shown through behavior. In horror it may worsen uncertainty. In comedy it may make the situation collapse in a satisfying way.
+The turn does not need to be a twist.
 
-## 4. Five-target architecture
+## 4. Variable-target architecture
 
-When five targets are required, build the story around them before prose drafting.
+Build the story around the complete selected target set before prose drafting.
 
-Create an internal placement map:
+Create an internal placement map with one row for every target:
 
 | Target | Story function | Approximate region | Memory anchor |
 |---|---|---|---|
-| T1 | establish fact/plan/state | opening/setup | concrete scene cue |
-| T2 | complicate or deepen | early-middle | concrete scene cue |
-| T3 | reveal history/relationship/change | middle | concrete scene cue |
-| T4 | intensify turn/consequence | late-middle | concrete scene cue |
-| T5 | reinforce outcome/aftertaste | late | concrete scene cue |
-
-This is a planning aid, not a rigid formula. Do not mechanically place one target in each beat if another distribution is more natural.
+| T01 | establish / complicate / reveal / decide / pay off | setup / middle / late | concrete scene cue |
 
 Rules:
 
-- all five target sentences must perform different or meaningfully distinct story jobs
-- avoid two target blocks back-to-back
-- normally place at least one paragraph or meaningful action beat between target blocks
-- do not create five mini-scenes merely to justify five sentences
-- if two targets express nearly the same idea, use different emotional or narrative functions
+- every target must perform a real narrative job
+- one target does **not** require one scene
+- avoid back-to-back target blocks unless the scene genuinely benefits
+- normally place meaningful Japanese action, dialogue, or reflection between target blocks
+- target order follows story logic, not textbook order, unless both happen to match
+- if two targets express similar meanings, give them different narrative or emotional functions
 - no target may exist only as decoration
+- if one target feels incompatible, redesign the incident, relationship, setting, or timeline before considering a split
 
-## 5. Every paragraph should do more than one job
+## 5. Protect emotional continuity
 
-In a compact story, strong paragraphs often accomplish two or more of:
+The reader should not have to restart emotional investment every few targets.
+
+Avoid:
+
+- new protagonist every target cluster
+- target 1 in one incident, target 2 in a completely unrelated incident, and so on
+- scene changes with no causal or emotional carryover
+- characters disappearing immediately after their sentence is used
+- a sequence of five-minute mini-stories joined by `later`, `the next day`, or `after that`
+
+For longer target sets, the same protagonist/problem may pass through several scenes. Each later scene should inherit pressure, knowledge, consequences, or relationship state from the earlier one.
+
+## 6. Every paragraph should do more than one job
+
+In compact fiction, strong paragraphs often accomplish two or more of:
 
 - advance action
 - reveal character
@@ -113,7 +141,7 @@ In a compact story, strong paragraphs often accomplish two or more of:
 
 If a paragraph only explains background and changes nothing, compress or remove it.
 
-## 6. Character compression
+## 7. Character compression without emotional thinness
 
 Do not explain a character profile in prose. Reveal it through:
 
@@ -124,11 +152,13 @@ Do not explain a character profile in prose. Reveal it through:
 - a repeated habit that changes by the end
 - a concrete object or choice that implies history
 
-A short-short should make the reader feel that the characters existed before page one without narrating their biographies.
+A short story should make the reader feel that the characters existed before page one without narrating their biographies.
+
+But compression does not mean rushing. If the target set is large enough to justify a longer story, spend some of that length letting relationships breathe.
 
 Always combine this with `character-voice-dialogue.md` when dialogue appears.
 
-## 7. Use subtext
+## 8. Use subtext
 
 Do not state every feeling and relationship fact directly.
 
@@ -144,7 +174,7 @@ The reader should occasionally be allowed to infer.
 
 Do not make the story cryptic merely to create subtext.
 
-## 8. Setting must participate
+## 9. Setting must participate
 
 Specific setting detail should affect the story rather than decorate it.
 
@@ -158,7 +188,7 @@ Examples:
 
 Use a small number of concrete details. Avoid generic atmosphere paragraphs.
 
-## 9. Opening and ending should speak to each other
+## 10. Opening and ending should speak to each other
 
 The final image, action, object, or line should ideally echo, reverse, deepen, or reframe something established near the beginning.
 
@@ -166,7 +196,7 @@ Do not force a clever callback. Use it only when it strengthens the story.
 
 The ending should not explain the theme.
 
-## 10. Do not depend only on the twist
+## 11. Do not depend only on the twist
 
 A surprise ending is optional.
 
@@ -179,7 +209,7 @@ Even if the final reveal is removed, the preceding story should still contain:
 
 A story that is boring until its final sentence fails.
 
-## 11. Genre promise must be felt
+## 12. Genre promise must be felt
 
 Comedy must generate comic pressure/timing, not merely include a funny premise.
 Horror must create unease, not merely mention ghosts.
@@ -188,19 +218,20 @@ Sports must include physical/competitive pressure.
 Mystery must create a question and a fair path toward its answer.
 Slice-of-life must make a small human detail matter.
 
-## 12. Final short-short test
+## 13. Final short-fiction test
 
 Before delivery, ask:
 
 - Can the core story be stated in one sentence?
-- Is the scope appropriate to 2,000–3,500 Japanese characters?
+- Does the scope fit the selected target count and planned length?
 - Does the opening create immediate curiosity?
 - Is there a meaningful turn?
 - Does the protagonist make or experience a consequential change?
-- Are all five targets integrated into one story rather than five stitched examples?
+- Are all selected targets integrated into one story rather than stitched examples?
 - Does each target have a memorable scene anchor?
+- Does emotional investment accumulate instead of reset?
 - Is some meaning implied rather than explained?
 - Does the ending reward the opening?
-- Would the story still be worth reading if all five target blocks vanished?
+- Would the story still be worth reading if all target blocks vanished?
 
 If not, revise before proceeding to the language and learning QA passes.
